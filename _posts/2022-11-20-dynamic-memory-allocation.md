@@ -70,7 +70,9 @@ MagicFruit* magicFruit = new MagicFruit;
 .......
 {% endhighlight %} 
 
-Kemudian kapan kita akan menghapusnya? anggaplah kita mempunyai sebuah class yang salah satu datanya adalah stamina, dan kita akan menjadikan nilai dari stamina itu menjadi 9.0f, tidak berkurang dan tidak bertambah. Seperti ini contohnya, dari class itu kita membuat sebuah objek, dan apabila objek itu bertabrakan dengan buah ajaib maka nilai stamina akan menjadi 9.0f, tidak berkurang dan tidak bertambah. Kiranya sepert ini gambaran class-nya:
+Kemudian kapan kita akan menghapusnya? anggaplah kita mempunyai sebuah class yang salah satu datanya adalah stamina, dan kita akan menjadikan nilai dari stamina itu menjadi 9.0f, tidak berkurang dan tidak bertambah. 
+
+Seperti ini contohnya, dari class itu kita membuat sebuah objek, dan apabila objek itu bertabrakan dengan buah ajaib maka nilai stamina akan menjadi 9.0f, tidak berkurang dan tidak bertambah. Kiranya sepert ini gambaran class-nya:
 {% highlight cpp %}
 class Player
 {
