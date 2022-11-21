@@ -1757,7 +1757,7 @@ inline std::string Vector2D::ToString() const
 }
 {% endhighlight %}
 
-### NaturalObject.cpp
+### Prop.cpp
 
 {% highlight cpp %}
 /*
