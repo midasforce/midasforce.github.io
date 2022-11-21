@@ -2,7 +2,7 @@
 title: Alokasi Memori Secara Dinamis
 ---
 
-Mungkin sebelumnya teman-teman sudah pernah melihat contoh penggunaan memori dinamis<!--more--> pada c++ yang cukup sederhana seperi ini: 
+Mungkin sebelumnya teman-teman sudah pernah melihat contoh penggunaan memori dinamis<!--more--> pada C++ yang cukup sederhana seperi ini: 
 
 {% highlight cpp %}
 #include <iostream>
@@ -134,13 +134,14 @@ if (magicFruit != nullptr)
 <br>
 ![GAMBAR2]({{ site.url }}/img/posts/dynamic-memory-allocation/2.png)
 
-Mungkin hanya segitu saja yang bisa saya sampaikan, untuk full source code codenya akan saya lampirkan dibawah, dan untuk assetnya dapat teman-teman temukan di github saya. Sekian dan terima kasih !!
+Mungkin hanya segitu saja yang bisa saya sampaikan, untuk full source codenya akan saya lampirkan dibawah, dan untuk assetnya dapat teman-teman temukan di github saya. Sekian dan terima kasih !!
 
 ## Full Source Code
 
 ### 2DWorld.h
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -162,6 +163,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #include <ctime>
 #include <memory>
@@ -178,6 +180,7 @@ SOFTWARE.
 ### 2DWorld.cpp
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -199,6 +202,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #include "2DWorld.h"
 
@@ -970,6 +974,7 @@ int main()
 ### BaseAnimation.h
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -991,6 +996,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #pragma once
 
@@ -1014,6 +1020,7 @@ private:
 ### BaseAnimation.cpp
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1035,6 +1042,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #include "Animation.h"
 
@@ -1071,6 +1079,7 @@ void BaseAnimation::Animate(const Vector2D& position, const Texture2D& texture, 
 ### Animal.cpp
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1092,6 +1101,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #include <array>
 #include "Animation.h"
@@ -1380,6 +1390,7 @@ inline void Animals::Draw(const float deltaTime)
 ### GameObject.h
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1401,6 +1412,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #pragma once
 
@@ -1434,6 +1446,7 @@ private:
 ### GameObject.cpp
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1455,6 +1468,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #include "GameObject.h"
 
@@ -1521,6 +1535,7 @@ void GameObject::Draw(float deltaTime)
 ### Map.h
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1542,6 +1557,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #pragma once
 
@@ -1580,6 +1596,7 @@ private:
 ### Map.cpp
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1601,6 +1618,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #include "Map.h"
 
@@ -1614,6 +1632,7 @@ void Map::Draw()
 ### Math2D.h
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1635,6 +1654,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #pragma once
 
@@ -1740,6 +1760,7 @@ inline std::string Vector2D::ToString() const
 ### NaturalObject.cpp
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1761,6 +1782,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #include "Math2D.h"
 
@@ -1818,6 +1840,7 @@ struct Prop
 ### Player.cpp
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1839,6 +1862,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #pragma once
 
@@ -1883,6 +1907,7 @@ private:
 ### Player.cpp
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -1904,6 +1929,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #include "Player.h"
 
@@ -2111,6 +2137,7 @@ int Player::LoadTextureFile(const char* texture)
 ### Screen.h
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -2132,6 +2159,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #pragma once
 
@@ -2161,6 +2189,7 @@ void DrawCenteredText(int y, const char* text, int fontSize, Color color);
 ### Screen.cpp
 
 {% highlight cpp %}
+/*
 MIT License
 
 Copyright (c) 2022 Wildan R. (@wildan9)
@@ -2182,6 +2211,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
 
 #include "Screen.h"
 
