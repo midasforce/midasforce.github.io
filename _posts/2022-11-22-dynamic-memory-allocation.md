@@ -1837,7 +1837,7 @@ struct Prop
 };
 {% endhighlight %}
 
-### Player.cpp
+### Player.h
 
 {% highlight cpp %}
 /*
