@@ -105,10 +105,7 @@ Dari struct MagicFruit dan class Player, kita akan membuat sebuah tabrakan yang 
 if (magicFruit != nullptr)
 {
     // apabila tidak terdeteksi tabrakan maka magic fruit akan di gambar
-    if (!CheckCollisionRecs(gameObj->player.GetCollision(), magicFruit->GetCollision()))
-    {
-        magicFruit->Draw();
-    }
+    magicFruit->Draw();
 
     // apabila terdeteksi tabrakan maka data class Player akan berubah, dan MagicFruit akan di hapus dan menjadi nullptr
     if (CheckCollisionRecs(gameObj->player.GetCollision(), magicFruit->GetCollision()))
@@ -121,6 +118,21 @@ if (magicFruit != nullptr)
     }
 }
 
+.......
+.......
+.......
+{% endhighlight %}
+
+Dan yang terakhir, jika barang kali tidak terjadi tabrakan, maka kita perlu menghapusnya.
+
+{% highlight cpp %}
+.......
+.......
+.......
+if (magicFruit != nullptr)
+{
+    delete magicFruit;
+}
 .......
 .......
 .......
@@ -881,6 +893,11 @@ void UpdateGame(raylib::Camera2D& camera, std::shared_ptr<GameObject> gameObj)
 
 void EndGame()
 {
+    if (magicFruit != nullptr)
+    {
+        delete magicFruit;
+    }
+
     UnloadScreenTexture();
 
     ShutdownAudio();
