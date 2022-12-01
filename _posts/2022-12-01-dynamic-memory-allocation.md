@@ -988,7 +988,7 @@ int main()
 }
 {% endhighlight %}
 
-### BaseAnimation.h
+### Animation.h
 
 {% highlight cpp %}
 /*
@@ -1034,7 +1034,7 @@ private:
 };
 {% endhighlight %}
 
-### BaseAnimation.cpp
+### Animation.cpp
 
 {% highlight cpp %}
 /*
