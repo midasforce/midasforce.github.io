@@ -8,7 +8,7 @@ Jadi begini teman-teman, pada waktu itu saya ingin menggabungkan 2 buah integer.
 
 ![GAMBAR2]({{ site.url }}/img/posts/concatenate-two-integer/2.jpg)
 
-Kemudian cara tersebut saya terapkan pada projek saya, dan setelah beberapa hari saya mulai berpikir, kenapa saya harus membuat 3 buah std::string. Padahal 1 aja juga bisa. Beginilah kalo cara yang punya saya sendiri:
+Kemudian cara tersebut saya terapkan pada proyek saya, dan setelah beberapa hari saya mulai berpikir, kenapa saya harus membuat 3 buah std::string. Padahal 1 aja juga bisa. Beginilah kalo cara yang punya saya sendiri:
 
 {% highlight cpp %}
 #include <iostream>
@@ -38,7 +38,7 @@ int main()
 }
 {% endhighlight %} 
 
-Dan ini perbedaan nya jika diterapkan pada projek saya:
+Dan ini perbedaan nya jika diterapkan pada proyek saya:
 
 Cara dari geeksforgeeks.org:
 
