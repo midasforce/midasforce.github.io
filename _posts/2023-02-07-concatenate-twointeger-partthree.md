@@ -4,11 +4,11 @@ title: Menggabungkan 2 Buah Integer Part 3
 
 Pada tulisan sebelumnya kita membahas mengenai operator "+" untuk menggabungkan string,<!--more--> dan saya jadi teringat bab pertama buku yang pernah saya baca ini:
 
-![GAMBAR1]({{ site.url }}/img/posts/concatenate-two-integer-3/1.jpg)
+![GAMBAR1]({{ site.url }}/img/posts/concatenate-two-integer-3/1.JPG)
 
 Dibuku itu di jelaskan bagaimana melalukan penambahan dan pengurangan vektor menggunakan operator "+" dan "-" seperti ini:
 
-![GAMBAR2]({{ site.url }}/img/posts/concatenate-two-integer-3/2.jpg)
+![GAMBAR2]({{ site.url }}/img/posts/concatenate-two-integer-3/2.JPG)
 
 Kemudian muncullah ide untuk menambahkan operator itu pada struct Vector2D milik saya. Sehingga nantinya Vector2D milik saya memiliki kemampuan yang sama seperti std::string, yaitu bisa menggunakan "+" atau append, tapi bedanya kalo Vector2D milik saya menggunakan "+" atau Add. Karena memang ada saatnya kita bisa menentukan mana yang lebih tepat untuk digunakan. Seperti ini contohnya:
 
